@@ -1,0 +1,20 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "index.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/index.py"
+    }
+  ],
+  "env": {
+    "SECRET_KEY": "learnconnect_production_secret_2024",
+    "JWT_SECRET_KEY": "learnconnect_jwt_production_secret_2024",
+    "FLASK_DEBUG": "false"
+  }
+}
